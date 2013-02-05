@@ -1,0 +1,49 @@
+[System]
+Name='FIS'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=9
+AndMethod='prod'
+OrMethod='probor'
+ImpMethod='prod'
+AggMethod='sum'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='E'
+Range=[-1 1]
+NumMFs=3
+MF1='Negative':'trimf',[-2 -1 0]
+MF2='Zero':'trimf',[-1 0 1]
+MF3='Positive':'trimf',[0 1 2]
+
+[Input2]
+Name='CE'
+Range=[-1 1]
+NumMFs=3
+MF1='Negative':'trimf',[-2 -1 0]
+MF2='Zero':'trimf',[-1 0 1]
+MF3='Positive':'trimf',[0 1 2]
+
+[Output1]
+Name='u'
+Range=[-1 1]
+NumMFs=5
+MF1='LargeNegative':'trimf',[-1 -1 -1]
+MF2='SmallNegative':'trimf',[-0.5 -0.5 -0.5]
+MF3='Zero':'trimf',[0 0 0]
+MF4='SmallPositive':'trimf',[0.5 0.5 0.5]
+MF5='LargePositive':'trimf',[1 1 1]
+
+[Rules]
+1 1, 1 (1) : 1
+1 2, 2 (1) : 1
+1 3, 3 (1) : 1
+2 1, 2 (1) : 1
+2 2, 3 (1) : 1
+2 3, 4 (1) : 1
+3 1, 3 (1) : 1
+3 2, 4 (1) : 1
+3 3, 5 (1) : 1
