@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.20"
+    ComputedModelVersion    "1.21"
     NumModelReferences	    0
     NumTestPointedSignals   0
   }
@@ -37,9 +37,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "melanholly"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Dec 31 12:29:02 2012"
-  RTWModifiedTimeStamp	  278854958
-  ModelVersionFormat	  "1.%<AutoIncrement:20>"
+  LastModifiedDate	  "Thu Mar 14 00:40:20 2013"
+  RTWModifiedTimeStamp	  285122391
+  ModelVersionFormat	  "1.%<AutoIncrement:21>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -76,6 +76,7 @@ Model {
     $ObjectID		    2
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "untitled"
+    signals_		    []
     overrideMode_	    [0.0]
     Array {
       Type		      "Cell"
@@ -83,6 +84,7 @@ Model {
       Cell		      "untitled"
       PropName		      "logAsSpecifiedByModels_"
     }
+    logAsSpecifiedByModelsSSIDs_ []
   }
   RecordCoverage	  off
   CovPath		  "/"
@@ -928,7 +930,7 @@ Model {
       Position		      [740, 97, 770, 203]
       BackgroundColor	      "green"
       Floating		      off
-      Location		      [828, 51, 1680, 543]
+      Location		      [823, 51, 1675, 543]
       Open		      on
       NumInputPorts	      "3"
       List {
@@ -1113,7 +1115,7 @@ Model {
       MaskIconRotate	      "none"
       MaskPortRotate	      "default"
       MaskIconUnits	      "autoscale"
-      MaskValueString	      "Kp_a|Ki_a|Kd_a|0|0|0.2|1|0|0|0.2|1|Kp_p|Ki_p|Kd_p"
+      MaskValueString	      "Kpa|Kpa/Tia|Kpa*Tda|0|0|0.2|1|0|0|0.2|1|Kpp|Kpp/Tip|Kpp*Tdp"
       MaskTabNameString	      "Azimut,Azimut,Azimut,hv,hv,hv,hv,vh,vh,vh,vh,Pitch,Pitch,Pitch"
       System {
 	Name			"Subsystem"
